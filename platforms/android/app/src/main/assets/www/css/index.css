@@ -1,0 +1,73 @@
+/* Basic formating for opening statement */
+#js-male,
+#js-female {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    min-height: 100%;
+    background-color: lightblue;
+    transition: transform 0.5s ease-in;
+}
+
+#js-female {
+    left: 50%;
+    background-color: lightpink;
+}
+
+#js-male p,
+#js-female p {
+    margin: 35vh auto;
+    color: #444;
+    text-align: center;
+}
+
+.js-moveLeft {
+    transform: translateX(-300%);
+}
+
+.js-moveRight {
+    transform: translateX(300%);
+}
+
+/* Formatting for Overlay */
+.overlay-bars {
+    display: none;
+}
+
+.overlay-bars.active {
+    display: block;
+}
+
+/* Formating For other stuff */
+
+.list-view {
+    margin: 0.1rem;
+}
+
+.button {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        background-color: #538fbe;
+        padding: 1.2rem 2.5rem;
+        margin: 2vw;
+        font-size: 1.5rem;
+        border: 1px solid #2d6898;
+        border-radius: 10%;
+        box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+}
+.button:hover {
+    cursor: pointer;
+}
+.info.t4 {
+    color:  #538fbe;
+}
+
+.button#yes {
+    color: #14b832;
+}
+.button#no {
+    color: #e61a38;
+}
