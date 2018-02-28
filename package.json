@@ -2,12 +2,12 @@
     "name": "ca.edumedia.dall0078.tundra",
     "displayName": "Tundra",
     "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "A Canadian dating app that emulates the tinder experience, for MAD9022 midterm assigment.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Apache Cordova Team",
+    "author": "Ernilo Dallagnolo Junior",
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-android": "^7.0.0",
