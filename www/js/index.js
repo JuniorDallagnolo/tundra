@@ -32,7 +32,6 @@ var APP = (function () {
         nmgr.addEventListener(t$.EventTypes.TAP, nav);
         document.getElementById('main').classList.add('active');
         document.getElementById('home').classList.add('current');
-        genFavs();
     }
 
     //Basic navigation function between the 2 tabs
