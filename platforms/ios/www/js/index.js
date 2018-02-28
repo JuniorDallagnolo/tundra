@@ -89,7 +89,6 @@ var APP = (function () {
             let img = document.createElement('img');
             img.src = imgURL + person.avatar;
             img.alt = `A ${person.gender} avatar picture`;
-            img.classList.add('round');
             div.appendChild(img);
             //Create Distance
             let p = document.createElement('p');
@@ -174,7 +173,7 @@ var APP = (function () {
         favs = document.getElementById('favorites');
         listBuilder(favorites);
         //Adling tiny shell tap events for deleting
-        let tis = new t$(document.querySelectorAll(".list-item"));
+        let tis = new t$(document.querySelectorAll(".action-right"));
         tis.addEventListener(t$.EventTypes.TAP, deleteFav);
     }
 
@@ -209,7 +208,7 @@ var APP = (function () {
 
     function deleteFav(ev) {
         prompt('delete');
-        var element = ev.target;
+        var element = ev.target.parentElement;
         element.outerHTML = "";
         delete element;
         sessionStorage.removeItem(ev.target.getAttribute('id'));

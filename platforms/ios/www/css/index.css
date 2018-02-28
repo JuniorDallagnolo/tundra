@@ -1,4 +1,5 @@
 /* Basic formating for opening statement */
+
 #js-male,
 #js-female {
     position: absolute;
@@ -31,6 +32,7 @@
 }
 
 /* Formatting for Overlay */
+
 .overlay-bars {
     display: none;
 }
@@ -45,29 +47,68 @@
     margin: 0.1rem;
 }
 
-.button {
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        background-color: #538fbe;
-        padding: 1.2rem 2.5rem;
-        margin: 2vw;
-        font-size: 1.5rem;
-        border: 1px solid #2d6898;
-        border-radius: 10%;
-        box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
-}
-.button:hover {
-    cursor: pointer;
-}
 .info.t4 {
-    color:  #538fbe;
+    color: #538fbe;
 }
 
-.button#yes {
-    color: #14b832;
+.page {
+    background: linear-gradient(139deg, #2f98c8, #526269, #e3e5ee, #0a0a0b);
+    background-size: 800% 800%;
+    animation: animated 29s ease infinite;
 }
-.button#no {
-    color: #e61a38;
+
+@keyframes animated {
+    0% {
+        background-position: 0% 15%
+    }
+    50% {
+        background-position: 100% 86%
+    }
+    100% {
+        background-position: 0% 15%
+    }
+}
+
+li p {
+    color: black;
+}
+
+li span {
+    color: red !important;
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 1);
+}
+.card p {
+    font-size: 0.8rem;
+}
+
+.card img{
+    padding: 0;
+}
+.card h2, .card p{
+    text-align: center;
+}
+.list-item {
+    transform: scale(0.9);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px 20px;
+    background-color: ghostwhite;
+    box-shadow: 0 3px 0.7px 1px #777777, 0 -7px rgba(0, 0, 0, 0.4) inset;
+    background-image: linear-gradient(right, #111 11%, #333 56%);
+    background-image: gradient(right, #111 11%, #333 56%);
+}
+
+.list-item p{
+    padding-top: 1rem;
+}
+
+.bar {
+    background-color: ghostwhite;
+}
+
+.list-item:last-child{
+    margin-bottom: 3rem;
 }

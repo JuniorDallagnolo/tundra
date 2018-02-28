@@ -108,3 +108,7 @@ li span {
 .bar {
     background-color: ghostwhite;
 }
+
+.list-item:last-child{
+    margin-bottom: 3rem;
+}

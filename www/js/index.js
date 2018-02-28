@@ -69,7 +69,7 @@ var APP = (function () {
     }
 
     function cardBuilder(arr) {
-        let df = new DocumentFragment();
+        let df = document.createDocumentFragment();
         let main = document.getElementById('main');
         arr.forEach(person => {
             //Create the Card and set class
@@ -209,9 +209,9 @@ var APP = (function () {
     function deleteFav(ev) {
         prompt('delete');
         var element = ev.target.parentElement;
+        sessionStorage.removeItem(element.getAttribute('id'));
         element.outerHTML = "";
         delete element;
-        sessionStorage.removeItem(ev.target.getAttribute('id'));
     }
 
     let loadEvent = ('deviceready' in document) ? 'deviceready' : 'DOMContentLoaded';

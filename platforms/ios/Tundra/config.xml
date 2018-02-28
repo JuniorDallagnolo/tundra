@@ -21,10 +21,10 @@
     </feature>
     <name>Tundra</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+       A Canadian dating app that emulates the tinder experience, for MAD9022 midterm assigment.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="dall0078@algonquinlive.com" href="http://dall0078.edumedia.ca">
+    Ernilo Dallagnolo Junior
     </author>
     <content src="index.html" />
     <access origin="*" />
