@@ -1,7 +1,7 @@
 //Core APP Engine
 var APP = (function () {
 
-    let url = 'http://griffis.edumedia.ca/mad9022/tundra/get.profiles.php?gender=';
+    let url = 'https://griffis.edumedia.ca/mad9022/tundra/get.profiles.php?gender=';
     let imgURL = "";
     let profiles = [];
     let gender = "male"; //Default selector is for males
