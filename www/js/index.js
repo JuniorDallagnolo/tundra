@@ -12,7 +12,6 @@ var APP = (function () {
         let tiny = new t$(document.getElementById('gender'));
         tiny.addEventListener('swipeleft', opening);
         tiny.addEventListener('swiperight', opening);
-        
     }
 
     //Opening function that builds the default app layout
@@ -164,6 +163,8 @@ var APP = (function () {
     function genFavs() {
         //Creating Empty array and adding whatever is on sessionStorage to it
         let favorites = [];
+        favs = document.getElementById('favorites');
+        favs.innerHTML = "";
         for (let i = 0, key, len = sessionStorage.length; i < len; i++) {
             key = sessionStorage.key(i);
             favorites.push(JSON.parse(sessionStorage[key]));
